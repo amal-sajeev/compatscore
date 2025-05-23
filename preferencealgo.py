@@ -40,7 +40,7 @@ class ReligiousInfo:
     sikh_attributes: sikh_attributes = None
     christian_attributes: sikh_attributes = None
 
-class FamilyDetails:
+class FamilyDetail:
     family_type: str = None  # "joint", "nuclear", "extended"
     family_status: str = None  # "middle_class", "upper_middle_class", "rich", "affluent"
     family_values: str = None  # "traditional", "moderate", "liberal"
@@ -54,7 +54,7 @@ class FamilyDetails:
     about_family: str = None
 
 # Education Information
-class EducationDetails:
+class EducationDetail:
     highest_education: str = None  # "high_school", "diploma", "bachelors", "masters", "doctorate", "professional"
     education_field: str = None  # "engineering", "medicine", "commerce", "arts", etc.
     college_name: str = None
@@ -62,7 +62,7 @@ class EducationDetails:
     additional_qualification: str = None
 
 # Career Information
-class CareerDetails:
+class CareerDetail:
     occupation: str = None  # "private_sector", "government", "business", "self_employed", "doctor", "engineer", "teacher", "not_working", "other"
     occupation_detail: str = None  # Specific job title
     employer_name: str = None
@@ -135,6 +135,15 @@ class Horoscope:
     manglik: str = None  # "yes", "no", "anshik", "dont_know"
     astrological_details: str = None
 
+class Metadata:
+    religion_weight: float
+    community_weight: float
+    education_weight: float
+    profession_weight: float
+    location_weight: float
+    age_weight: float
+    lifestyle_weight: float
+
 class Profile:
     user_id: int
     profile_id: int
@@ -167,3 +176,42 @@ class Profile:
     verified_id: bool = None
     verified_photo: bool = None
     show_horoscope: bool = False
+    religious_info: ReligiousInfo = None
+    family_details: FamilyDetail = None
+    education_details: EducationDetail = None
+    career_detail: CareerDetail = None
+    location_info: Location_Info = None
+    lifestyle: Lifestyle = None
+    partner_preferences: PartnerPreferences = None
+    profile_photos: ProfilePhoto = None
+    horoscope: Horoscope = None
+    metadata: Metadata
+
+def demographic_match(profile1: Profile, profile2: Profile):
+    """ Compares demographic details from both user profiles and creates various scores that will be used to calculate the demographic score.
+
+    Args:
+        profile1 (Profile): First user Profile
+        profile2 (Profile): Second user Profile    
+    """
+    age_diff = abs(profile1.age - profile2.age)
+    age_score = max(0, 100 - (age_diff * 3)) #max() to prevent score from becoming negative
+
+    #Height Compatibility
+    height_diff = abs(profile1.height_cm-profile2.height_cm)
+    height_score = max(0,100 - (height_diff*0.5))
+    
+    demographic_score = (age_score+height_score)/2
+
+def cultural_match(profile1:Profile, profile2: Profile):
+    """Compares religions and cultural details from    ofiles and creates various scores that will be used to calculate the cultural match score.
+
+    Args:
+        profile1 (Profile): First user Profile
+        profile2 (Profile): Second user Profile
+    """
+    #Religious match
+    # if profile1.religious_info.
+
+
+    
