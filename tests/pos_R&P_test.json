@@ -1,0 +1,432 @@
+{
+    "profiles": {
+        "male_profile": {
+            "user_id": 10001,
+            "profile_id": 50001,
+            "email": "rajesh.sharma@email.com",
+            "phone_number": "+91-9876543210",
+            "registration_date": "2024-02-10T09:15:00Z",
+            "account_status": "active",
+            "verification_status": "verified",
+            "membership_type": "premium",
+            "profile_completion_percentage": 95,
+            "profile_for": "self",
+            "first_name": "Rajesh",
+            "last_name": "Sharma",
+            "gender": "male",
+            "date_of_birth": "1992-07-18",
+            "age": 32,
+            "marital_status": "never_married",
+            "height_cm": 175,
+            "weight_kg": 75,
+            "body_type": "athletic",
+            "complexion": "fair",
+            "blood_group": "B+",
+            "differently_abled": false,
+            "differently_abled_details": null,
+            "health_conditions": null,
+            "profile_headline": "Software Engineer seeking Life Partner with Traditional Values",
+            "about_me": "I am a dedicated software engineer working in Bangalore. I believe in maintaining a balance between modern lifestyle and traditional values. I enjoy reading, traveling, and spending time with family. Looking for a understanding and supportive life partner.",
+            "verified_id": true,
+            "verified_photo": true,
+            "show_horoscope": true,
+            "religious_info": {
+            "religion": "hindu",
+            "community": "brahmin",
+            "sub_community": "sharma",
+            "mother_tongue": "hindi",
+            "gothra": "bharadwaj",
+            "caste": "brahmin",
+            "sub_caste": "gaur",
+            "manglik": "no",
+            "nakshatra": "rohini",
+            "religious_values": "traditional",
+            "hindu_attributes": {
+                "gotra": "bharadwaj",
+                "rashi": "vrishabh",
+                "manglik_status": "no",
+                "nakshatra": "rohini"
+            },
+            "muslim_attributes": null,
+            "sikh_attributes": null,
+            "christian_attributes": null
+            },
+            "family_details": {
+            "family_type": "nuclear",
+            "family_status": "upper_middle_class",
+            "family_values": "traditional",
+            "father_occupation": "retired government officer",
+            "mother_occupation": "homemaker",
+            "brothers": 1,
+            "brothers_married": 0,
+            "sisters": 1,
+            "sisters_married": 1,
+            "family_location": "Delhi",
+            "about_family": "We are a close-knit family with traditional values. Father is a retired government officer and mother is a loving homemaker. We believe in maintaining family bonds and cultural traditions."
+            },
+            "education_details": {
+            "highest_education": "masters",
+            "education_field": "engineering",
+            "college_name": "IIT Delhi",
+            "year_of_passing": 2016,
+            "additional_qualification": "AWS Certified Solutions Architect"
+            },
+            "career_details": {
+            "occupation": "private_sector",
+            "occupation_detail": "Senior Software Engineer",
+            "employer_name": "Tech Mahindra",
+            "annual_income": 1800000.00,
+            "income_currency": "INR",
+            "work_location": "Bangalore"
+            },
+            "location_info": {
+            "country": "India",
+            "state": "Karnataka",
+            "city": "Bangalore",
+            "pincode": "560001",
+            "residential_status": "citizen",
+            "current_residence": "Bangalore",
+            "hometown": "Delhi",
+            "willing_to_relocate": true
+            },
+            "lifestyle": {
+            "diet": "veg",
+            "smoking": "never",
+            "drinking": "occasionally",
+            "pets": "love_pets",
+            "own_house": false,
+            "own_car": true,
+            "hobbies": "reading, traveling, photography, cricket",
+            "interests": "technology, movies, music, cooking"
+            },
+            "partner_preferences": {
+            "age_min": 25,
+            "age_max": 30,
+            "height_min_cm": 155,
+            "height_max_cm": 170,
+            "marital_status": "never_married",
+            "religions": "hindu",
+            "castes": "brahmin,kshatriya,vaishya",
+            "mother_tongues": "hindi,english",
+            "education_level": "bachelors,masters",
+            "profession": "doctor,engineer,teacher,government",
+            "annual_income_min": 500000.00,
+            "diet_preference": "veg",
+            "smoking_preference": "never",
+            "drinking_preference": "doesnt_matter",
+            "preferred_countries": "India",
+            "preferred_states": "Karnataka,Delhi,Maharashtra",
+            "preferred_cities": "Bangalore,Delhi,Mumbai,Pune",
+            "manglik_preference": "no",
+            "descriptions": "Looking for an educated, family-oriented girl who values traditions while being open to modern thinking. Should be understanding, caring, and supportive."
+            },
+            "profile_photos": [
+            {
+                "photo_id": 1001,
+                "photo_url": "https://example.com/photos/rajesh_1.jpg",
+                "is_primary": true,
+                "is_verified": true,
+                "visibility": "all"
+            }
+            ],
+            "horoscope": {
+            "birth_date": "1992-07-18",
+            "birth_time": "08:30:00",
+            "birth_place": "Delhi, Delhi, India",
+            "horoscope_image_url": "https://example.com/horoscopes/rajesh_horoscope.pdf",
+            "manglik": "no",
+            "astrological_details": "Born under Rohini Nakshatra in Vrishabh Rashi. Venus is strongly placed indicating good fortune in relationships."
+            }
+        },
+        "female_profile": {
+            "user_id": 10002,
+            "profile_id": 50002,
+            "email": "priya.patel@email.com",
+            "phone_number": "+91-9876543211",
+            "registration_date": "2024-03-05T14:20:00Z",
+            "account_status": "active",
+            "verification_status": "verified",
+            "membership_type": "gold",
+            "profile_completion_percentage": 90,
+            "profile_for": "self",
+            "first_name": "Priya",
+            "last_name": "Patel",
+            "gender": "female",
+            "date_of_birth": "1995-11-22",
+            "age": 29,
+            "marital_status": "never_married",
+            "height_cm": 162,
+            "weight_kg": 55,
+            "body_type": "slim",
+            "complexion": "wheatish",
+            "blood_group": "O+",
+            "differently_abled": false,
+            "differently_abled_details": null,
+            "health_conditions": null,
+            "profile_headline": "Doctor seeking Caring and Understanding Life Partner",
+            "about_me": "I am a practicing doctor who believes in serving society while maintaining strong family values. I enjoy classical music, cooking, and spending quality time with loved ones. Seeking a life partner who respects my profession and shares similar values.",
+            "verified_id": true,
+            "verified_photo": true,
+            "show_horoscope": true,
+            "religious_info": {
+            "religion": "hindu",
+            "community": "vaishya",
+            "sub_community": "patel",
+            "mother_tongue": "gujarati",
+            "gothra": "kashyap",
+            "caste": "patel",
+            "sub_caste": "kadva_patel",
+            "manglik": "anshik",
+            "nakshatra": "jyeshtha",
+            "religious_values": "moderate",
+            "hindu_attributes": {
+                "gotra": "kashyap",
+                "rashi": "vrishchik",
+                "manglik_status": "anshik",
+                "nakshatra": "jyeshtha"
+            },
+            "muslim_attributes": null,
+            "sikh_attributes": null,
+            "christian_attributes": null
+            },
+            "family_details": {
+            "family_type": "joint",
+            "family_status": "upper_middle_class",
+            "family_values": "moderate",
+            "father_occupation": "businessman",
+            "mother_occupation": "teacher",
+            "brothers": 1,
+            "brothers_married": 1,
+            "sisters": 0,
+            "sisters_married": 0,
+            "family_location": "Ahmedabad",
+            "about_family": "We are a well-established Gujarati family with business background. Father runs a textile business and mother is a retired school teacher. We value education and believe in supporting each other's dreams."
+            },
+            "education_details": {
+            "highest_education": "professional",
+            "education_field": "medicine",
+            "college_name": "All India Institute of Medical Sciences",
+            "year_of_passing": 2019,
+            "additional_qualification": "MD in Pediatrics"
+            },
+            "career_details": {
+            "occupation": "doctor",
+            "occupation_detail": "Pediatrician",
+            "employer_name": "Apollo Hospitals",
+            "annual_income": 1500000.00,
+            "income_currency": "INR",
+            "work_location": "Mumbai"
+            },
+            "location_info": {
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "pincode": "400001",
+            "residential_status": "citizen",
+            "current_residence": "Mumbai",
+            "hometown": "Ahmedabad",
+            "willing_to_relocate": true
+            },
+            "lifestyle": {
+            "diet": "veg",
+            "smoking": "never",
+            "drinking": "never",
+            "pets": "have_pets",
+            "own_house": false,
+            "own_car": true,
+            "hobbies": "classical music, cooking, reading, yoga",
+            "interests": "healthcare, social work, traveling, gardening"
+            },
+            "partner_preferences": {
+            "age_min": 30,
+            "age_max": 36,
+            "height_min_cm": 170,
+            "height_max_cm": 185,
+            "marital_status": "never_married",
+            "religions": "hindu",
+            "castes": "brahmin,kshatriya,vaishya",
+            "mother_tongues": "gujarati,hindi,english",
+            "education_level": "bachelors,masters,professional,doctorate",
+            "profession": "doctor,engineer,business,government",
+            "annual_income_min": 1000000.00,
+            "diet_preference": "veg",
+            "smoking_preference": "never",
+            "drinking_preference": "never",
+            "preferred_countries": "India,USA",
+            "preferred_states": "Maharashtra,Gujarat,Karnataka",
+            "preferred_cities": "Mumbai,Ahmedabad,Pune,Bangalore",
+            "manglik_preference": "doesnt_matter",
+            "descriptions": "Looking for an educated, well-settled man who respects women's independence and career aspirations. Should be family-oriented, honest, and have good moral values."
+            },
+            "profile_photos": [
+            {
+                "photo_id": 1002,
+                "photo_url": "https://example.com/photos/priya_1.jpg",
+                "is_primary": true,
+                "is_verified": true,
+                "visibility": "connections"
+            }
+            ],
+            "horoscope": {
+            "birth_date": "1995-11-22",
+            "birth_time": "15:45:00",
+            "birth_place": "Ahmedabad, Gujarat, India",
+            "horoscope_image_url": "https://example.com/horoscopes/priya_horoscope.pdf",
+            "manglik": "anshik",
+            "astrological_details": "Born under Jyeshtha Nakshatra in Vrishchik Rashi. Mars placement indicates partial Manglik status. Jupiter's favorable position brings success in career."
+            }
+        }
+    },
+    "conversation": {
+      "conversation": {
+        "chat_id": "CHAT_50005_50006",
+        "participants": [
+        {
+          "user_id": 10005,
+          "profile_id": 50005,
+          "name": "Rajesh Sharma"
+        },
+        {
+          "user_id": 10006,
+          "profile_id": 50006,
+          "name": "Priya Patel"
+        }
+        ],
+        "conversation_started": "2024-03-22T16:30:00Z",
+        "last_message_time": "2024-03-22T21:45:00Z",
+        "status": "active",
+        "messages": [
+        {
+          "message_id": "MSG_001",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T16:30:00Z",
+          "message_type": "text",
+          "content": "hi Priya... hope you dont mind me messaging. saw your profile and we seem to have similar interests. i'm not great at these conversations tbh 😅 but thought i'd give it a try. how's your day going?",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_002",
+          "sender_id": 10006,
+          "sender_name": "Priya Patel",
+          "timestamp": "2024-03-22T17:15:00Z",
+          "message_type": "text",
+          "content": "Hi Rajesh! Not at all, thank you for reaching out :) I'm not great at this either lol. Had a long day at work actually - spent 4 hours debugging code that turned out to be a missing semicolon 🤦‍♀️ How was your day? I see you're also in tech",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_003",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T17:32:00Z",
+          "message_type": "text",
+          "content": "omg missing semicolon!! 😂 been there done that. actually spent an entire day once because i had a typo in a variable name. felt so dumb afterwards lol. my day was okay, usual meetings and code reviews. can i ask what tech stack you work with? i'm mostly java and spring boot these days",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_004",
+          "sender_id": 10006,
+          "sender_name": "Priya Patel",
+          "timestamp": "2024-03-22T17:50:00Z",
+          "message_type": "text",
+          "content": "Haha yes the typo struggle is real! I work mostly with Python and Django, some React for frontend. Java intimidates me tbh 😅 too verbose for my liking. But I respect people who can handle it! Your profile mentioned you like trekking - I've always wanted to try but I'm honestly scared of heights and bugs and basically everything outdoors lol",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_005",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T18:10:00Z",
+          "message_type": "text",
+          "content": "python is cool! wish i was better at it. and lol about the outdoors fear 😄 honestly i only got into trekking because my college friends dragged me. first trek i complained the entire time and swore i'd never do it again. but then... idk something about reaching the top felt good? maybe we could start with something easy like a nature walk if you're ever interested? no pressure though!",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_006",
+          "sender_id": 10006,
+          "sender_name": "Priya Patel",
+          "timestamp": "2024-03-22T18:35:00Z",
+          "message_type": "text",
+          "content": "A nature walk sounds... manageable 😊 I appreciate that you're not judging my indoor lifestyle lol. I saw you're from Pune originally but work in Hyderabad? How do you find it there? I'm from Mumbai and honestly the thought of moving cities for marriage scares me a bit. Is that weird to bring up so early?",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_007",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T18:52:00Z",
+          "message_type": "text",
+          "content": "not weird at all! these are important things to think about. hyderabad is nice but yeah i miss pune food and my mom's cooking 😅 moving cities is scary, i totally get it. mumbai is awesome though! been there few times for work. the local trains still confuse me but the vada pav is 🔥 maybe we're both overthinking this though? we just started talking lol",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_008",
+          "sender_id": 10006,
+          "sender_name": "Priya Patel",
+          "timestamp": "2024-03-22T19:20:00Z",
+          "message_type": "text",
+          "content": "You're absolutely right, I tend to overthink everything 😅 My friends always tell me that. Vada pav appreciation is a good sign though! Can I ask something random? What's the weirdest thing about you that people don't usually know? I feel like matrimonial profiles make everyone sound so perfect and boring",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_009",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T19:45:00Z",
+          "message_type": "text",
+          "content": "haha good question! okay this is embarrassing but... i still sleep with a small teddy bear. had it since i was 5 and somehow never stopped 🙈 my roommate makes fun of me but whatever. also i talk to myself when coding, like full conversations. your turn! what's your weird thing?",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_010",
+          "sender_id": 10006,
+          "sender_name": "Priya Patel",
+          "timestamp": "2024-03-22T20:10:00Z",
+          "message_type": "text",
+          "content": "Aww that's actually sweet about the teddy bear! And talking while coding is totally normal, I do that too 😄 My weird thing is I eat ice cream with a fork. Don't ask me why, spoons just feel wrong for ice cream. Also I have conversations with my plants and genuinely believe they respond. My neighbors probably think I'm crazy",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_011",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T20:35:00Z",
+          "message_type": "text",
+          "content": "ice cream with a FORK?? 😂😂 okay that's genuinely weird but i respect it lol. and plants totally respond! science backs that up... sort of. you seem really nice Priya. i was nervous about messaging because honestly most conversations on these sites are either super formal or super weird. this feels... normal? is that okay to say?",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_012",
+          "sender_id": 10006,
+          "sender_name": "Priya Patel",
+          "timestamp": "2024-03-22T21:15:00Z",
+          "message_type": "text",
+          "content": "That's totally okay to say! I was thinking the same thing actually. Most guys either send copy-paste messages or get way too personal too fast. This feels like talking to a friend which is nice 😊 Can I admit something? I was really nervous about your message and took like 30 mins to reply because I kept rewriting it lol",
+          "read_status": true,
+          "delivered_status": true
+        },
+        {
+          "message_id": "MSG_013",
+          "sender_id": 10005,
+          "sender_name": "Rajesh Sharma",
+          "timestamp": "2024-03-22T21:45:00Z",
+          "message_type": "text",
+          "content": "haha i did the same thing with my first message! wrote it like 5 times 😅 this whole matrimonial thing is new for me. my parents finally convinced me to try it. would you maybe want to have a phone call sometime? no pressure at all, just thought it might be nice to actually hear each other's voices? we can keep it short if it gets awkward lol",
+          "read_status": true,
+          "delivered_status": true
+        }
+        ]
+      }
+      }
+}

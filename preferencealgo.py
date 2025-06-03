@@ -175,7 +175,7 @@ class Profile:
     about_me: str = None
     verified_id: bool = None
     verified_photo: bool = None
-    show_horoscope: bool = False
+    show_horoscope: bool = Falsed
     religious_info: ReligiousInfo = None
     family_details: FamilyDetail = None
     education_details: EducationDetail = None
@@ -184,7 +184,7 @@ class Profile:
     lifestyle: Lifestyle = None
     partner_preferences: PartnerPreferences = None
     profile_photos: ProfilePhoto = None
-    horoscope: Horoscope = None
+    horoscope: Horoscope = None 
     metadata: Metadata
 
 def demographic_match(profile1: Profile, profile2: Profile):
@@ -192,16 +192,15 @@ def demographic_match(profile1: Profile, profile2: Profile):
 
     Args:
         profile1 (Profile): First user Profile
-        profile2 (Profile): Second user Profile    
-    """
+        profile2 (Profile): Second user Profile         
+    """ 
     age_diff = abs(profile1.age - profile2.age)
-    age_score = max(0, 100 - (age_diff * 3)) #max() to prevent score from becoming negative
+    age_score = max(0, 100 - (age_diff * 3)) #max() to arevent score from becoming negative
 
     #Height Compatibility
     height_diff = abs(profile1.height_cm-profile2.height_cm)
     height_score = max(0,100 - (height_diff*0.5))
-    
-    demographic_score = (age_score+height_score)/2
+    demographic_score = (age_score+height_score)/2  
 
 def cultural_match(profile1:Profile, profile2: Profile):
     """Compares religions and cultural details from    ofiles and creates various scores that will be used to calculate the cultural match score.

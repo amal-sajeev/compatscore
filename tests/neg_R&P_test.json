@@ -1,0 +1,432 @@
+{
+    "profiles": {
+        "male_profile": {
+            "user_id": 10001,
+            "profile_id": 50001,
+            "email": "rajesh.sharma@email.com",
+            "phone_number": "+91-9876543210",
+            "registration_date": "2024-02-10T09:15:00Z",
+            "account_status": "active",
+            "verification_status": "verified",
+            "membership_type": "premium",
+            "profile_completion_percentage": 95,
+            "profile_for": "self",
+            "first_name": "Rajesh",
+            "last_name": "Sharma",
+            "gender": "male",
+            "date_of_birth": "1992-07-18",
+            "age": 32,
+            "marital_status": "never_married",
+            "height_cm": 175,
+            "weight_kg": 75,
+            "body_type": "athletic",
+            "complexion": "fair",
+            "blood_group": "B+",
+            "differently_abled": false,
+            "differently_abled_details": null,
+            "health_conditions": null,
+            "profile_headline": "Software Engineer seeking Life Partner with Traditional Values",
+            "about_me": "I am a dedicated software engineer working in Bangalore. I believe in maintaining a balance between modern lifestyle and traditional values. I enjoy reading, traveling, and spending time with family. Looking for a understanding and supportive life partner.",
+            "verified_id": true,
+            "verified_photo": true,
+            "show_horoscope": true,
+            "religious_info": {
+            "religion": "hindu",
+            "community": "brahmin",
+            "sub_community": "sharma",
+            "mother_tongue": "hindi",
+            "gothra": "bharadwaj",
+            "caste": "brahmin",
+            "sub_caste": "gaur",
+            "manglik": "no",
+            "nakshatra": "rohini",
+            "religious_values": "traditional",
+            "hindu_attributes": {
+                "gotra": "bharadwaj",
+                "rashi": "vrishabh",
+                "manglik_status": "no",
+                "nakshatra": "rohini"
+            },
+            "muslim_attributes": null,
+            "sikh_attributes": null,
+            "christian_attributes": null
+            },
+            "family_details": {
+            "family_type": "nuclear",
+            "family_status": "upper_middle_class",
+            "family_values": "traditional",
+            "father_occupation": "retired government officer",
+            "mother_occupation": "homemaker",
+            "brothers": 1,
+            "brothers_married": 0,
+            "sisters": 1,
+            "sisters_married": 1,
+            "family_location": "Delhi",
+            "about_family": "We are a close-knit family with traditional values. Father is a retired government officer and mother is a loving homemaker. We believe in maintaining family bonds and cultural traditions."
+            },
+            "education_details": {
+            "highest_education": "masters",
+            "education_field": "engineering",
+            "college_name": "IIT Delhi",
+            "year_of_passing": 2016,
+            "additional_qualification": "AWS Certified Solutions Architect"
+            },
+            "career_details": {
+            "occupation": "private_sector",
+            "occupation_detail": "Senior Software Engineer",
+            "employer_name": "Tech Mahindra",
+            "annual_income": 1800000.00,
+            "income_currency": "INR",
+            "work_location": "Bangalore"
+            },
+            "location_info": {
+            "country": "India",
+            "state": "Karnataka",
+            "city": "Bangalore",
+            "pincode": "560001",
+            "residential_status": "citizen",
+            "current_residence": "Bangalore",
+            "hometown": "Delhi",
+            "willing_to_relocate": true
+            },
+            "lifestyle": {
+            "diet": "veg",
+            "smoking": "never",
+            "drinking": "occasionally",
+            "pets": "love_pets",
+            "own_house": false,
+            "own_car": true,
+            "hobbies": "reading, traveling, photography, cricket",
+            "interests": "technology, movies, music, cooking"
+            },
+            "partner_preferences": {
+            "age_min": 25,
+            "age_max": 30,
+            "height_min_cm": 155,
+            "height_max_cm": 170,
+            "marital_status": "never_married",
+            "religions": "hindu",
+            "castes": "brahmin,kshatriya,vaishya",
+            "mother_tongues": "hindi,english",
+            "education_level": "bachelors,masters",
+            "profession": "doctor,engineer,teacher,government",
+            "annual_income_min": 500000.00,
+            "diet_preference": "veg",
+            "smoking_preference": "never",
+            "drinking_preference": "doesnt_matter",
+            "preferred_countries": "India",
+            "preferred_states": "Karnataka,Delhi,Maharashtra",
+            "preferred_cities": "Bangalore,Delhi,Mumbai,Pune",
+            "manglik_preference": "no",
+            "descriptions": "Looking for an educated, family-oriented girl who values traditions while being open to modern thinking. Should be understanding, caring, and supportive."
+            },
+            "profile_photos": [
+            {
+                "photo_id": 1001,
+                "photo_url": "https://example.com/photos/rajesh_1.jpg",
+                "is_primary": true,
+                "is_verified": true,
+                "visibility": "all"
+            }
+            ],
+            "horoscope": {
+            "birth_date": "1992-07-18",
+            "birth_time": "08:30:00",
+            "birth_place": "Delhi, Delhi, India",
+            "horoscope_image_url": "https://example.com/horoscopes/rajesh_horoscope.pdf",
+            "manglik": "no",
+            "astrological_details": "Born under Rohini Nakshatra in Vrishabh Rashi. Venus is strongly placed indicating good fortune in relationships."
+            }
+        },
+        "female_profile": {
+            "user_id": 10002,
+            "profile_id": 50002,
+            "email": "priya.patel@email.com",
+            "phone_number": "+91-9876543211",
+            "registration_date": "2024-03-05T14:20:00Z",
+            "account_status": "active",
+            "verification_status": "verified",
+            "membership_type": "gold",
+            "profile_completion_percentage": 90,
+            "profile_for": "self",
+            "first_name": "Priya",
+            "last_name": "Patel",
+            "gender": "female",
+            "date_of_birth": "1995-11-22",
+            "age": 29,
+            "marital_status": "never_married",
+            "height_cm": 162,
+            "weight_kg": 55,
+            "body_type": "slim",
+            "complexion": "wheatish",
+            "blood_group": "O+",
+            "differently_abled": false,
+            "differently_abled_details": null,
+            "health_conditions": null,
+            "profile_headline": "Doctor seeking Caring and Understanding Life Partner",
+            "about_me": "I am a practicing doctor who believes in serving society while maintaining strong family values. I enjoy classical music, cooking, and spending quality time with loved ones. Seeking a life partner who respects my profession and shares similar values.",
+            "verified_id": true,
+            "verified_photo": true,
+            "show_horoscope": true,
+            "religious_info": {
+            "religion": "hindu",
+            "community": "vaishya",
+            "sub_community": "patel",
+            "mother_tongue": "gujarati",
+            "gothra": "kashyap",
+            "caste": "patel",
+            "sub_caste": "kadva_patel",
+            "manglik": "anshik",
+            "nakshatra": "jyeshtha",
+            "religious_values": "moderate",
+            "hindu_attributes": {
+                "gotra": "kashyap",
+                "rashi": "vrishchik",
+                "manglik_status": "anshik",
+                "nakshatra": "jyeshtha"
+            },
+            "muslim_attributes": null,
+            "sikh_attributes": null,
+            "christian_attributes": null
+            },
+            "family_details": {
+            "family_type": "joint",
+            "family_status": "upper_middle_class",
+            "family_values": "moderate",
+            "father_occupation": "businessman",
+            "mother_occupation": "teacher",
+            "brothers": 1,
+            "brothers_married": 1,
+            "sisters": 0,
+            "sisters_married": 0,
+            "family_location": "Ahmedabad",
+            "about_family": "We are a well-established Gujarati family with business background. Father runs a textile business and mother is a retired school teacher. We value education and believe in supporting each other's dreams."
+            },
+            "education_details": {
+            "highest_education": "professional",
+            "education_field": "medicine",
+            "college_name": "All India Institute of Medical Sciences",
+            "year_of_passing": 2019,
+            "additional_qualification": "MD in Pediatrics"
+            },
+            "career_details": {
+            "occupation": "doctor",
+            "occupation_detail": "Pediatrician",
+            "employer_name": "Apollo Hospitals",
+            "annual_income": 1500000.00,
+            "income_currency": "INR",
+            "work_location": "Mumbai"
+            },
+            "location_info": {
+            "country": "India",
+            "state": "Maharashtra",
+            "city": "Mumbai",
+            "pincode": "400001",
+            "residential_status": "citizen",
+            "current_residence": "Mumbai",
+            "hometown": "Ahmedabad",
+            "willing_to_relocate": true
+            },
+            "lifestyle": {
+            "diet": "veg",
+            "smoking": "never",
+            "drinking": "never",
+            "pets": "have_pets",
+            "own_house": false,
+            "own_car": true,
+            "hobbies": "classical music, cooking, reading, yoga",
+            "interests": "healthcare, social work, traveling, gardening"
+            },
+            "partner_preferences": {
+            "age_min": 30,
+            "age_max": 36,
+            "height_min_cm": 170,
+            "height_max_cm": 185,
+            "marital_status": "never_married",
+            "religions": "hindu",
+            "castes": "brahmin,kshatriya,vaishya",
+            "mother_tongues": "gujarati,hindi,english",
+            "education_level": "bachelors,masters,professional,doctorate",
+            "profession": "doctor,engineer,business,government",
+            "annual_income_min": 1000000.00,
+            "diet_preference": "veg",
+            "smoking_preference": "never",
+            "drinking_preference": "never",
+            "preferred_countries": "India,USA",
+            "preferred_states": "Maharashtra,Gujarat,Karnataka",
+            "preferred_cities": "Mumbai,Ahmedabad,Pune,Bangalore",
+            "manglik_preference": "doesnt_matter",
+            "descriptions": "Looking for an educated, well-settled man who respects women's independence and career aspirations. Should be family-oriented, honest, and have good moral values."
+            },
+            "profile_photos": [
+            {
+                "photo_id": 1002,
+                "photo_url": "https://example.com/photos/priya_1.jpg",
+                "is_primary": true,
+                "is_verified": true,
+                "visibility": "connections"
+            }
+            ],
+            "horoscope": {
+            "birth_date": "1995-11-22",
+            "birth_time": "15:45:00",
+            "birth_place": "Ahmedabad, Gujarat, India",
+            "horoscope_image_url": "https://example.com/horoscopes/priya_horoscope.pdf",
+            "manglik": "anshik",
+            "astrological_details": "Born under Jyeshtha Nakshatra in Vrishchik Rashi. Mars placement indicates partial Manglik status. Jupiter's favorable position brings success in career."
+            }
+        }
+    },
+    "conversation": {
+        "conversation": {
+          "chat_id": "CHAT_50003_50004",
+          "participants": [
+            {
+              "user_id": 10003,
+              "profile_id": 50003,
+              "name": "Rajesh Sharma"
+            },
+            {
+              "user_id": 10004,
+              "profile_id": 50004,
+              "name": "Priya Patel"
+            }
+          ],
+          "conversation_started": "2024-03-20T14:22:00Z",
+          "last_message_time": "2024-03-20T19:15:00Z",
+          "status": "blocked_by_user_50004",
+          "messages": [
+            {
+              "message_id": "MSG_001",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma",
+              "timestamp": "2024-03-20T14:22:00Z",
+              "message_type": "text",
+              "content": "hey beautiful 😍😍😍 saw ur pic and WOW. btw i'm actually 28 not 32 like my profile says lol. my mom made the profile and got confused about my age 😂 so when can we meet?? i know a nice place",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_002",
+              "sender_id": 10004,
+              "sender_name": "Priya Patel",
+              "timestamp": "2024-03-20T15:45:00Z",
+              "message_type": "text",
+              "content": "Hi Rajesh. Thank you for the message. I must confess, I'm not actually a doctor yet - I'm still in my final year of MBBS. Also, I should mention that I collect vintage dolls and I have 247 of them in my room. Do you like dolls? They're very good listeners and never judge you.",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_003",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma",
+              "timestamp": "2024-03-20T15:52:00Z",
+              "message_type": "text",
+              "content": "dolls are... interesting? anyway i have to tell u something. i dont actually work at tech mahindra anymore. got fired last month for... creative differences with management 😅 but dont worry im starting my own crypto company! already have 12 followers on instagram for it. also are u single? like REALLY single? no male friends?",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_004",
+              "sender_id": 10004,
+              "sender_name": "Priya Patel",
+              "timestamp": "2024-03-20T16:15:00Z",
+              "message_type": "text",
+              "content": "I have many male friends actually. In fact, my best friend Arjun lives with me as a roommate. Platonic of course. We share the same bed sometimes when he has nightmares. About your crypto company - that's fascinating! I've been investing my pocket money in cryptocurrency too. Lost 2 lakhs so far but I know it will come back. The dolls told me so.",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_005",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma",
+              "timestamp": "2024-03-20T16:18:00Z",
+              "message_type": "text",
+              "content": "wait what??? u live with a guy???? and the DOLLS told u about crypto??? thats... ok whatever. listen i need to be honest. i still live with my parents and my mom does everything for me including laundry and making my bed. also i may have exaggerated about being 5'9\". im more like 5'5\" on a good day with thick soles 😬",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_006",
+              "sender_id": 10004,
+              "sender_name": "Priya Patel",
+              "timestamp": "2024-03-20T16:45:00Z",
+              "message_type": "text",
+              "content": "Height doesn't matter to me. I'm actually 5'8\" not 5'4\" like my profile says. I wear heels to look shorter in photos. Also, I should mention I'm a vegan but I sometimes eat chicken because I think chickens aren't really animals. They're more like... moving vegetables? Do you eat meat? I judge people based on their meat consumption habits.",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_007",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma",
+              "timestamp": "2024-03-20T17:10:00Z",
+              "message_type": "text",
+              "content": "chickens are moving vegetables?? 😂😂 thats hilarious! wait are u serious? anyway i eat everything. even tried snake once. btw can u lend me some money? just 50k. my crypto venture needs initial investment and my parents said no. i promise ill pay back with 200% interest!! the dolls can be witnesses 🤣",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_008",
+              "sender_id": 10004,
+              "sender_name": "Priya Patel",
+              "timestamp": "2024-03-20T17:25:00Z",
+              "message_type": "text",
+              "content": "I can't lend money because I'm currently being investigated by the college for allegedly stealing medicines from the hospital pharmacy. It's a misunderstanding of course. I was just borrowing them for my personal research on pharmaceutical effects on doll hair. Also, I should mention I'm engaged to someone else but it's an open relationship. Are you okay with that?",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_009",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma",
+              "timestamp": "2024-03-20T17:30:00Z",
+              "message_type": "text",
+              "content": "WHAT?? engaged??? stealing medicines??? testing on DOLL HAIR??? this is getting too weird even for me and i once dated a girl who thought the earth was flat! also why are u on a matrimonial site if ur engaged?? this makes no sense!!",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_010",
+              "sender_id": 10004,
+              "sender_name": "Priya Patel",
+              "timestamp": "2024-03-20T18:00:00Z",
+              "message_type": "text",
+              "content": "Well, my fiance is currently in jail for insurance fraud, so I thought I should keep my options open. Also, flat earth theory isn't that crazy - have you actually SEEN the earth's curvature? I haven't. But the dolls have traveled with me everywhere and they confirm the earth looks pretty flat from their perspective.",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_011",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma",
+              "timestamp": "2024-03-20T18:15:00Z",
+              "message_type": "text",
+              "content": "ok im starting to think ur either pranking me or ur actually insane. fiance in JAIL? asking DOLLS about earth's shape?? look i may have lied about my job and height but at least im not completely nuts! though i have to admit this is the most interesting conversation ive had on this site 😅",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_012",
+              "sender_id": 10004,
+              "sender_name": "Priya Patel",
+              "timestamp": "2024-03-20T18:45:00Z",
+              "message_type": "text",
+              "content": "I'm completely serious about everything. The dolls don't lie, unlike humans. Speaking of which, I can tell you're lying about more things than just your job and height. The dolls sense deception. They're whispering to me right now that you probably don't even have a car and live in a paying guest accommodation, not with your parents. Am I right?",
+              "read_status": true,
+              "delivered_status": true
+            },
+            {
+              "message_id": "MSG_013",
+              "sender_id": 10003,
+              "sender_name": "Rajesh Sharma", 
+              "timestamp": "2024-03-20T19:15:00Z",
+              "message_type": "text",
+              "content": "HOW DID U... wait the dolls told u that?? ok this is getting creepy now. fine yes i live in a PG and take the bus. BUT HOW COULD DOLLS POSSIBLY KNOW THAT?? are u some kind of witch? do u put spells on people through matrimonial sites?? im blocking u now this is too weird bye!",
+              "read_status": false,
+              "delivered_status": true
+            }
+          ]
+        }
+      }
+}
