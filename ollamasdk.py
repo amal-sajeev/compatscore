@@ -76,8 +76,8 @@ def chat_scorer(content: str):
                         "truthfullness": [0-10],  
                         "general_trend": ["positive" or "negative"],  
                         "conversation_analysis": "General comments about the conversation's strengths and weaknesses.",  
-                        "m_comments": "Specific feedback for the male user, addressing his engagement, authenticity, connection, and truthfulness. Write it addressing him as 'you', but acting as an analyzer, not as the other user.",  
-                        "f_comments": "Specific feedback for the female user, addressing her engagement, authenticity, connection, and truthfulness. Write it addressing him as 'you', but acting as an analyzer, not as the other user."  
+                        "m_comments": "Specific feedback for the male user, addressing his engagement, authenticity, connection, and truthfulness. Write it addressing him as 'you', acting as an analyzer, not as the other user.",  
+                        "f_comments": "Specific feedback for the female user, addressing her engagement, authenticity, connection, and truthfulness. Write it addressing her as 'you', acting as an analyzer, not as the other user."  
                       }                
                     """
 
