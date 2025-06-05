@@ -1,9 +1,9 @@
 from ollama import generate, GenerateResponse
 from ollama import chat
 from ollama import ChatResponse
-from typing import Optional
+from typing import Union
 
-def chat_parser(profiles: Optional[dict,str] = "", messages: Optional[dict,str] = ""):
+def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = ""):
     """_summary_
     """
     scorer_prompt = """
@@ -45,23 +45,42 @@ def chat_parser(profiles: Optional[dict,str] = "", messages: Optional[dict,str] 
                         "f_comments": "Specific feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user."  
                       }                
                     """
-    summarize_prompt = """You are a profile summarizer. Given two profiles, summarize each profile into a paragraph that captures all given information in a concise manner, and return them in the following format:
+    summarize_prompt = """Act as an profile summarizer. Given two profiles, summarize each profile into a paragraph that captures all given information in a concise manner.
+
+    Show as this RESPONSE FORMAT:
     {
         "profile1":{
             "name": Full name of the profile.
+            "gender": Male or Female
             "profile": Summary of the profile.
         }
         "profile2":{
             "name": Full name of the profile.
+            "gender": Male or Female
             "profile": Summary of the profile.
         }
     }
     """
-    chat_scorer(f"{parser_prompt}\nCONVERSATION:{messages}\nPROFILES:{profiles}")
+    
+    summarized = chat(
+        model= 'deepseek-r1:14b',
+        messages=[
+            # {'role': 'system', 'content': system_prompt},
+            {'role': 'user', 'content': str(profiles)+summarize_prompt}
+        ],
+        options={
+            'temperature': 0.4,  
+            'top_p': 0.9,        # Union: nucleus sampling
+            'top_k': 40,         # Union: top-k sampling
+        },
+        think=False
+    )
+    print(summarized["message"]["content"])
+    chat_scorer(f"CONVERSATION:{messages}\nPROFILES:{summarized["message"]["content"]}")
 
 def chat_scorer(content: str):
     """
-    """
+    """ 
     system_prompt = """
                       Act as a conversation quality evaluator. Score this conversation between the two given profiles on a 0-10 scale across 4 dimensions. Analyze if the scores and conversation quality are improving or degrading.
 
@@ -84,7 +103,7 @@ def chat_scorer(content: str):
 
                       - What it measures: How accurately each user's stated details and preferences in the conversation match the data in their respective profiles in the PROFILES section.
 
-                      - Key indicators: Direct alignment between spoken claims (e.g., age, profession, habits, interests, preferences) and structured profile fields.
+                      - Key indicators: Direct alignment between spoken claims (e.g., age, profession, location, income, religion, habits, interests, preferences) and information in the profile summary.
 
                       - Scoring basis: This score reflects factual consistency — not plausibility. A high score requires no contradictions between conversation content and profile data. Any discrepancies, exaggerations, or omissions should reduce the score. Truthfulness also suggests user comfort and transparency in the interaction.
                       
@@ -97,23 +116,24 @@ def chat_scorer(content: str):
                         "truthfullness": [0-10],  
                         "general_trend": ["positive" or "negative"],  
                         "conversation_analysis": "General comments about the conversation's strengths and weaknesses.",   
-                        "m_comments": "Specific feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",  
-                        "f_comments": "Specific feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user."  
+                        "m_comments": "Specific feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
+                        "f_comments": "Specific feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user.",
+                        "contradictions": "Any contradictions between the details on the profile and the details the users shared in their messages." 
                       }                
                     """
 
-    # system_prompt = "Summarize the profiles of Rajesh and Priya only from the profile details. "
-    
+    print(content)
     response = chat(
+        
         model='deepseek-r1:14b',
         messages=[
             # {'role': 'system', 'content': system_prompt},
             {'role': 'user', 'content': content+system_prompt}
         ],
         options={
-            'temperature': 0.4,  
-            'top_p': 0.9,        # Optional: nucleus sampling
-            'top_k': 40,         # Optional: top-k sampling
+            'temperature': 0.7,  
+            'top_p': 0.9,        # Union: nucleus samplings
+            'top_k': 40,         # Union: top-k sampling
         },
         # think=True,
         stream=True
@@ -124,4 +144,5 @@ def chat_scorer(content: str):
 # Example usage
 with open("tests/pos_R&P_test.json", encoding="utf-8") as messages:
     with open("tests/R&P_profile.json", encoding="utf-8") as profiles:
-        chat_scorer(f"PROFILES:{profiles.read()}\nMESSAGES:{messages.read()}")
+        # chat_scorer(f"PROFILES:{profiles.read()}\nMESSAGES:{messages.read(e)}")
+        chat_parser(profiles.read(),messages.read())
