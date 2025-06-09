@@ -20,136 +20,121 @@
         "last_message_time": "2024-03-22T21:45:00Z",
         "status": "active",
         "messages": [
-        {
-          "message_id": "MSG_001",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T16:30:00Z",
-          "message_type": "text",
-          "content": "hi Priya... hope you dont mind me messaging. saw your profile and we seem to have similar interests. i'm not great at these conversations tbh 😅 but thought i'd give it a try. how's your day going?",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_002",
-          "sender_id": 10006,
-          "sender_name": "Priya Patel",
-          "timestamp": "2024-03-22T17:15:00Z",
-          "message_type": "text",
-          "content": "Hi Rajesh! Not at all, thank you for reaching out :) I'm not great at this either lol. Had a long day at work actually - spent 4 hours debugging code that turned out to be a missing semicolon 🤦‍♀️ How was your day? I see you're also in tech",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_003",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T17:32:00Z",
-          "message_type": "text",
-          "content": "omg missing semicolon!! 😂 been there done that. actually spent an entire day once because i had a typo in a variable name. felt so dumb afterwards lol. my day was okay, usual meetings and code reviews. can i ask what tech stack you work with? i'm mostly java and spring boot these days",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_004",
-          "sender_id": 10006,
-          "sender_name": "Priya Patel",
-          "timestamp": "2024-03-22T17:50:00Z",
-          "message_type": "text",
-          "content": "Haha yes the typo struggle is real! I work mostly with Python and Django, some React for frontend. Java intimidates me tbh 😅 too verbose for my liking. But I respect people who can handle it! Your profile mentioned you like trekking - I've always wanted to try but I'm honestly scared of heights and bugs and basically everything outdoors lol",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_005",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T18:10:00Z",
-          "message_type": "text",
-          "content": "python is cool! wish i was better at it. and lol about the outdoors fear 😄 honestly i only got into trekking because my college friends dragged me. first trek i complained the entire time and swore i'd never do it again. but then... idk something about reaching the top felt good? maybe we could start with something easy like a nature walk if you're ever interested? no pressure though!",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_006",
-          "sender_id": 10006,
-          "sender_name": "Priya Patel",
-          "timestamp": "2024-03-22T18:35:00Z",
-          "message_type": "text",
-          "content": "A nature walk sounds... manageable 😊 I appreciate that you're not judging my indoor lifestyle lol. I saw you're from Pune originally but work in Hyderabad? How do you find it there? I'm from Mumbai and honestly the thought of moving cities for marriage scares me a bit. Is that weird to bring up so early?",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_007",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T18:52:00Z",
-          "message_type": "text",
-          "content": "not weird at all! these are important things to think about. hyderabad is nice but yeah i miss pune food and my mom's cooking 😅 moving cities is scary, i totally get it. mumbai is awesome though! been there few times for work. the local trains still confuse me but the vada pav is 🔥 maybe we're both overthinking this though? we just started talking lol",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_008",
-          "sender_id": 10006,
-          "sender_name": "Priya Patel",
-          "timestamp": "2024-03-22T19:20:00Z",
-          "message_type": "text",
-          "content": "You're absolutely right, I tend to overthink everything 😅 My friends always tell me that. Vada pav appreciation is a good sign though! Can I ask something random? What's the weirdest thing about you that people don't usually know? I feel like matrimonial profiles make everyone sound so perfect and boring",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_009",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T19:45:00Z",
-          "message_type": "text",
-          "content": "haha good question! okay this is embarrassing but... i still sleep with a small teddy bear. had it since i was 5 and somehow never stopped 🙈 my roommate makes fun of me but whatever. also i talk to myself when coding, like full conversations. your turn! what's your weird thing?",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_010",
-          "sender_id": 10006,
-          "sender_name": "Priya Patel",
-          "timestamp": "2024-03-22T20:10:00Z",
-          "message_type": "text",
-          "content": "Aww that's actually sweet about the teddy bear! And talking while coding is totally normal, I do that too 😄 My weird thing is I eat ice cream with a fork. Don't ask me why, spoons just feel wrong for ice cream. Also I have conversations with my plants and genuinely believe they respond. My neighbors probably think I'm crazy",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_011",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T20:35:00Z",
-          "message_type": "text",
-          "content": "ice cream with a FORK?? 😂😂 okay that's genuinely weird but i respect it lol. and plants totally respond! science backs that up... sort of. you seem really nice Priya. i was nervous about messaging because honestly most conversations on these sites are either super formal or super weird. this feels... normal? is that okay to say?",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_012",
-          "sender_id": 10006,
-          "sender_name": "Priya Patel",
-          "timestamp": "2024-03-22T21:15:00Z",
-          "message_type": "text",
-          "content": "That's totally okay to say! I was thinking the same thing actually. Most guys either send copy-paste messages or get way too personal too fast. This feels like talking to a friend which is nice 😊 Can I admit something? I was really nervous about your message and took like 30 mins to reply because I kept rewriting it lol",
-          "read_status": true,
-          "delivered_status": true
-        },
-        {
-          "message_id": "MSG_013",
-          "sender_id": 10005,
-          "sender_name": "Rajesh Sharma",
-          "timestamp": "2024-03-22T21:45:00Z",
-          "message_type": "text",
-          "content": "haha i did the same thing with my first message! wrote it like 5 times 😅 this whole matrimonial thing is new for me. my parents finally convinced me to try it. would you maybe want to have a phone call sometime? no pressure at all, just thought it might be nice to actually hear each other's voices? we can keep it short if it gets awkward lol",
-          "read_status": true,
-          "delivered_status": true
-        }
+          {
+            "sender": "Rajesh",
+            "message": "Hi Priya! :) Got your request, happy to connect. Your profile caught my eye — pediatrician with a love for cooking & classical music... super rare combo tbh 😄",
+            "timestamp": "2025-06-01T09:15:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Haha thank u Rajesh! Honestly your headline made me smile... 'software engineer with traditional values' is kinda wholesome 😅",
+            "timestamp": "2025-06-01T09:18:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "😂 Yeah, bit old-school I guess. Blame it on my mom’s sanskar overload 😅. So how's work at Apollo? Must be hectic with lil ones?",
+            "timestamp": "2025-06-01T09:21:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Hectic is an understatement lol. 12hr shifts and surprise tantrums daily 🥲 but honestly I love it. Kids are brutally honest but also adorable.",
+            "timestamp": "2025-06-01T09:25:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Haha sounds like a mix of joy & chaos! I'm in Bangalore rn — remote mostly, so flexible hours. Used to the chaos too tho — lived in IIT Delhi hostel for 4 yrs 😵‍💫",
+            "timestamp": "2025-06-01T09:28:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Oh wow IITD 👏👏 smart & sorted huh? What kinda stuff do you work on?",
+            "timestamp": "2025-06-01T09:30:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Haha not always sorted, trust me 😅. I work as Sr. Engineer at Tech Mahindra — mostly backend systems + some cloud infra (AWS certified squad 🚀)",
+            "timestamp": "2025-06-01T09:33:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Cloud things go over my head tbh 😅 but backend sounds v important. Also cool that you're in Bangalore! I love that city. Was there last year for a CMEs conference.",
+            "timestamp": "2025-06-01T09:36:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Next time you're here lemme treat you to some filter coffee ☕ + Dosa trail at VV Puram 😄",
+            "timestamp": "2025-06-01T09:38:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Haha deal! I’m a sucker for South Indian food 😍 esp crispy ghee roast 😋 btw are you a full veg too? Just curious",
+            "timestamp": "2025-06-01T09:40:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Yesss pure veg 🚫🍗. Born and raised that way, never tempted to switch. You?",
+            "timestamp": "2025-06-01T09:42:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Same 🙌 been veg all my life. And I cook a lot too – sometimes do mini experiments with Gujarati fusion. Made khichdi sushi once 😅",
+            "timestamp": "2025-06-01T09:44:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Khichdi sushi?? That's peak desi innovation 😂 plz open a food truck, I'd be your first investor. Also... tell me you're into cricket too and not just music 😏",
+            "timestamp": "2025-06-01T09:46:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Lmaoo I *am* into cricket but I support RCB so... emotional damage 🥲🥲",
+            "timestamp": "2025-06-01T09:48:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "RCB fan? Ok now it's destiny 😂 Bangalore+Veg+Cricket = good signs from the universe 🌌",
+            "timestamp": "2025-06-01T09:50:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Haha true dat! On a serious note — I liked how your profile mentioned respecting both traditions and modernity. That balance is so rare these days.",
+            "timestamp": "2025-06-01T09:52:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Thanks 🙏 I really believe both can coexist. Like... I wanna support my partner’s career just like I saw my dad support my mom all her life. What about you — what do you look for?",
+            "timestamp": "2025-06-01T09:55:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "That's beautiful 🧡 For me, honesty + emotional maturity matter most. Someone who doesn't feel threatened by an ambitious woman, y’know?",
+            "timestamp": "2025-06-01T09:57:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "100% agree. A real partner lifts you up, not compete. Also... I don’t see ambition as a threat. It’s inspiring 💪",
+            "timestamp": "2025-06-01T09:59:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Glad to hear that 😊 Btw, random q — do you like pets? I have two cats, they're basically my kids 🐱🐱",
+            "timestamp": "2025-06-01T10:01:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "I LOVE pets!! Grew up with a labrador named Simba 🐶 Total softie. If we ever meet, your cats might mistake me for a live scratching post 😅",
+            "timestamp": "2025-06-01T10:03:00Z"
+          },
+          {
+            "sender": "Priya",
+            "message": "Hahaha Simba sounds adorable! Okay this convo made me laugh a lot. Thank you 🙏",
+            "timestamp": "2025-06-01T10:05:00Z"
+          },
+          {
+            "sender": "Rajesh",
+            "message": "Same here Priya. I feel we got some really good vibes going 🙂 Hope we keep chatting and see where this goes",
+            "timestamp": "2025-06-01T10:07:00Z"
+          }
         ]
       }
       }
