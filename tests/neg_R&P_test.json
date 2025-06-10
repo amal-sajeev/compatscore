@@ -15,137 +15,84 @@
           ],
           "conversation_started": "2024-03-20T14:22:00Z",
           "last_message_time": "2024-03-20T19:15:00Z",
-          "status": "blocked_by_user_50004",
           "messages": [
             {
-              "message_id": "MSG_001",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma",
               "timestamp": "2024-03-20T14:22:00Z",
               "message_type": "text",
               "content": "hey beautiful 😍😍😍 saw ur pic and WOW. btw i'm actually 28 not 32 like my profile says lol. my mom made the profile and got confused about my age 😂 so when can we meet?? i know a nice place",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_002",
-              "sender_id": 10004,
               "sender_name": "Priya Patel",
               "timestamp": "2024-03-20T15:45:00Z",
               "message_type": "text",
               "content": "Hi Rajesh. Thank you for the message. I must confess, I'm not actually a doctor yet - I'm still in my final year of MBBS. Also, I should mention that I collect vintage dolls and I have 247 of them in my room. Do you like dolls? They're very good listeners and never judge you.",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_003",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma",
               "timestamp": "2024-03-20T15:52:00Z",
               "message_type": "text",
               "content": "dolls are... interesting? anyway i have to tell u something. i dont actually work at tech mahindra anymore. got fired last month for... creative differences with management 😅 but dont worry im starting my own crypto company! already have 12 followers on instagram for it. also are u single? like REALLY single? no male friends?",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_004",
-              "sender_id": 10004,
               "sender_name": "Priya Patel",
               "timestamp": "2024-03-20T16:15:00Z",
               "message_type": "text",
               "content": "I have many male friends actually. In fact, my best friend Arjun lives with me as a roommate. Platonic of course. We share the same bed sometimes when he has nightmares. About your crypto company - that's fascinating! I've been investing my pocket money in cryptocurrency too. Lost 2 lakhs so far but I know it will come back. The dolls told me so.",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_005",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma",
               "timestamp": "2024-03-20T16:18:00Z",
               "message_type": "text",
               "content": "wait what??? u live with a guy???? and the DOLLS told u about crypto??? thats... ok whatever. listen i need to be honest. i still live with my parents and my mom does everything for me including laundry and making my bed. also i may have exaggerated about being 5'9\". im more like 5'5\" on a good day with thick soles 😬",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_006",
-              "sender_id": 10004,
               "sender_name": "Priya Patel",
               "timestamp": "2024-03-20T16:45:00Z",
               "message_type": "text",
               "content": "Height doesn't matter to me. I'm actually 5'8\" not 5'4\" like my profile says. I wear heels to look shorter in photos. Also, I should mention I'm a vegan but I sometimes eat chicken because I think chickens aren't really animals. They're more like... moving vegetables? Do you eat meat? I judge people based on their meat consumption habits.",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_007",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma",
               "timestamp": "2024-03-20T17:10:00Z",
               "message_type": "text",
               "content": "chickens are moving vegetables?? 😂😂 thats hilarious! wait are u serious? anyway i eat everything. even tried snake once. btw can u lend me some money? just 50k. my crypto venture needs initial investment and my parents said no. i promise ill pay back with 200% interest!! the dolls can be witnesses 🤣",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_008",
-              "sender_id": 10004,
               "sender_name": "Priya Patel",
               "timestamp": "2024-03-20T17:25:00Z",
               "message_type": "text",
               "content": "I can't lend money because I'm currently being investigated by the college for allegedly stealing medicines from the hospital pharmacy. It's a misunderstanding of course. I was just borrowing them for my personal research on pharmaceutical effects on doll hair. Also, I should mention I'm engaged to someone else but it's an open relationship. Are you okay with that?",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_009",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma",
               "timestamp": "2024-03-20T17:30:00Z",
               "message_type": "text",
               "content": "WHAT?? engaged??? stealing medicines??? testing on DOLL HAIR??? this is getting too weird even for me and i once dated a girl who thought the earth was flat! also why are u on a matrimonial site if ur engaged?? this makes no sense!!",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_010",
-              "sender_id": 10004,
               "sender_name": "Priya Patel",
               "timestamp": "2024-03-20T18:00:00Z",
               "message_type": "text",
               "content": "Well, my fiance is currently in jail for insurance fraud, so I thought I should keep my options open. Also, flat earth theory isn't that crazy - have you actually SEEN the earth's curvature? I haven't. But the dolls have traveled with me everywhere and they confirm the earth looks pretty flat from their perspective.",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_011",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma",
               "timestamp": "2024-03-20T18:15:00Z",
               "message_type": "text",
               "content": "ok im starting to think ur either pranking me or ur actually insane. fiance in JAIL? asking DOLLS about earth's shape?? look i may have lied about my job and height but at least im not completely nuts! though i have to admit this is the most interesting conversation ive had on this site 😅",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_012",
-              "sender_id": 10004,
               "sender_name": "Priya Patel",
               "timestamp": "2024-03-20T18:45:00Z",
               "message_type": "text",
               "content": "I'm completely serious about everything. The dolls don't lie, unlike humans. Speaking of which, I can tell you're lying about more things than just your job and height. The dolls sense deception. They're whispering to me right now that you probably don't even have a car and live in a paying guest accommodation, not with your parents. Am I right?",
-              "read_status": true,
-              "delivered_status": true
             },
             {
-              "message_id": "MSG_013",
-              "sender_id": 10003,
               "sender_name": "Rajesh Sharma", 
               "timestamp": "2024-03-20T19:15:00Z",
               "message_type": "text",
-              "content": "HOW DID U... wait the dolls told u that?? ok this is getting creepy now. fine yes i live in a PG and take the bus. BUT HOW COULD DOLLS POSSIBLY KNOW THAT?? are u some kind of witch? do u put spells on people through matrimonial sites?? im blocking u now this is too weird bye!",
-              "read_status": false,
-              "delivered_status": true
+              "content": "HOW DID U... wait the dolls told u that?? ok this is getting creepy now. fine yes i live in a PG and take the bus. BUT HOW COULD DOLLS POSSIBLY KNOW THAT?? are u some kind of witch? do u put spells on people through matrimonial sites?? im blocking u now this is too weird bye!",e
             }
           ]
         }
