@@ -3,50 +3,12 @@ from ollama import chat
 from ollama import ChatResponse
 from typing import Union
 
-def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = "", complex:bool=False):
+def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = "", detail:bool=False, model:str = "gemma3:latest"):
     """Given the profiles and the messages, parse them into strings that can be added to the prompt for scoring.
 
     
     """
-    scorer_prompt = """
-                      Act as a conversation quality evaluator. Score this conversation between the two given profiles on a 0-10 scale across 4 dimensions. Analyze if the scores and conversation quality are improving or degrading.
-
-                      ENGAGEMENT QUALITY (0-10):  
-                      - What it measures: Active participation, asking questions, building on partner's responses  
-                      - Key indicators: References previous messages, asks follow-ups, shows curiosity  
-                      - Why essential: Predicts conversation sustainability and mutual interest  
-
-                      AUTHENTICITY (0-10):  
-                      - What it measures: Genuine self-expression vs generic/scripted responses  
-                      - Key indicators: Personal stories, consistent voice, appropriate vulnerability  
-                      - Scoring basis: Distinguishes real connection potential from surface-level chat  
-
-                      CONNECTION (0-10)  
-                      - What it measures: How close the details shared by each user match the preferences on the other user's profile from the PROFILES section.  
-                      - Key indicators: Identifies shared interests, shows empathy, discusses compatibility  
-                      - Scoring basis: Analysis of closeness between the details shared by one user and the preferences in the other user's profile.  
-
-                      TRUTHFULNESS (0-10)
-
-                      - What it measures: How accurately each user's stated details and preferences in the conversation match the data in their respective profiles in the PROFILES section.
-
-                      - Key indicators: Direct alignment between spoken claims (e.g., age, profession, habits, interests, preferences) and structured profile fields.
-
-                      - Scoring basis: This score reflects factual consistency — not plausibility. A high score requires no contradictions between conversation content and profile data. Any discrepancies, exaggerations, or omissions should reduce the score. Truthfulness also suggests user comfort and transparency in the interaction.
-                      
-                      
-                      Show as this RESPONSE FORMAT:  
-                      {
-                        "engagement_quality": [0-10],  
-                        "authenticity": [0-10],  
-                        "connection": [0-10],  
-                        "truthfullness": [0-10],  
-                        "general_trend": ["positive" or "negative"],  
-                        "conversation_analysis": "General comments about the conversation's strengths and weaknesses.",   
-                        "m_comments": "Specific feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",  
-                        "f_comments": "Specific feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness. If the other user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user."  
-                      }                
-                    """
+    
     summarize_prompt = """Act as an profile summarizer. Given two profiles, summarize each profile into a paragraph that captures all given information in a concise manner. Make sure no detail is omitted. Seperate the preferences from the profile so you can include all the details for both.
 
     Show as this RESPONSE FORMAT:
@@ -80,9 +42,9 @@ def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = "", 
         think=False                                                    
     )
     print(summarized["message"]["content"])
-    return(chat_scorer(f"CONVERSATION:{messages}\nPROFILES:{summarized["message"]["content"]}")
+    return(chat_scorer(f"CONVERSATION:{messages}\nPROFILES:{summarized["message"]["content"]}",detail = detail, model= model)
 )
-def chat_scorer(content: str, complex:bool=False):
+def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
     """
     """
    
@@ -117,10 +79,10 @@ def chat_scorer(content: str, complex:bool=False):
                         "engagement_quality": [0-10],  
                         "authenticity": [0-10],  
                         "connection": [0-10],  
-                        "truthfullness": [0-10],  
+                        "truthfullness": [0-10],                                          
                         "general_trend": ["positive" or "negative"],  
-                        "m_comments": "One sentence of feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness. If either the male or female user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
-                        "f_comments": "One sentence of feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness. If either the male or female user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user."
+                        "m_comments": "One sentence of Practical feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness, and giving him advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
+                        "f_comments": "One sentence of Practical feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness, and giving her advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user."
                       }                
                     """
     system_prompt_detailed = """
@@ -155,18 +117,17 @@ def chat_scorer(content: str, complex:bool=False):
                         "authenticity": [0-10],  
                         "connection": [0-10],  
                         "truthfullness": [0-10],  
-                        "general_trend": ["positive" or "negative"],  
-                        "conversation_analysis": "General comments about the conversation's strengths and weaknesses.",   
-                        "m_comments": "Specific feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness. If either the male or female user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
-                        "f_comments": "Specific feedback and advice      for the female user, addressing her engagement, authenticity, connection, and truthfulness. If either the male or female user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user.",
+                        "general_trend": ["positive" or "negative"],
+                        "m_comments": "Practical feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness, and giving him advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
+                        "f_comments": "Practical feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness, and giving her advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user.",
                         "contradictions": "Any contradictions between the details on the profile and the details the users shared in their messages." 
                       }                
                     """
-    
-    if complex == False:
+
+    if detail == False:
         response = chat(
         
-            model='gemma3:latest',
+            model=model,
             messages=[
                 # {'role': 'system', 'content': system_prompt},
                 {'role': 'user', 'content': content+system_prompt}
@@ -182,13 +143,13 @@ def chat_scorer(content: str, complex:bool=False):
     else:
         response = chat(
         
-            model='gemma3:latest',
+            model=model,
             messages=[
                 # {'role': 'system', 'content': system_prompt},
                 {'role': 'user', 'content': content+system_prompt_detailed}
             ],
             options={
-                'temperature': 0.5,     
+                'temperature': 0.5,
                 'top_p': 0.95,        # Union: nucleus samplings
                 'top_k': 50,         # Union: top-k sampling
             },
@@ -196,11 +157,13 @@ def chat_scorer(content: str, complex:bool=False):
             stream=False
         )
 
-    return(response['message']['content'])
-
+    return(str(response['message']['content']).replace("```","").replace("json",""))
+    
 # Example usage
 with open("tests/neg_R&P_test.json", encoding="utf-8") as messages:
     with open("tests/R&P_profile.json", encoding="utf-8") as profiles:
         # chat_scorer(f"PROFILES:{profiles.read()}\nMESSAGES:{messages.read(e)}")
-        result = chat_parser(profiles.read(),messages.read())
+        result = chat_parser(profiles.read(),messages.read(),
+         detail=False,
+         model="gemma3:latest")
         print(result)
