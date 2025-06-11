@@ -153,7 +153,7 @@ def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
                 'top_p': 0.95,        # Union: nucleus samplings
                 'top_k': 50,         # Union: top-k sampling
             },
-            think=False,
+            think=False,    
             stream=False
         )
 
