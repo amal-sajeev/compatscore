@@ -3,10 +3,8 @@ from ollama import chat
 from ollama import ChatResponse
 from typing import Union
 
-def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = "", detail:bool=False, model:str = "gemma3:latest"):
+def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = "", detail:bool=True, model:str = "gemma3:latest"):
     """Given the profiles and the messages, parse them into strings that can be added to the prompt for scoring.
-
-    
     """
     
     summarize_prompt = """Act as an profile summarizer. Given two profiles, summarize each profile into a paragraph that captures all given information in a concise manner. Make sure no detail is omitted. Seperate the preferences from the profile so you can include all the details for both.
@@ -27,24 +25,26 @@ def chat_parser(profiles: Union[dict,str] = "", messages: Union[dict,str] = "", 
         }
     }
     """
-    
-    summarized = chat(
-        model= 'dolphin3:8b',
-        messages=[
-            # {'role': 'system', 'content': system_prompt},
-            {'role': 'user', 'content': str(profiles)+summarize_prompt}
-        ],
-        options={
-            'temperature': 0.4, 
-            'top_p': 0.9,        # Union: nucleus sampling
-            'top_k': 40,         # Union: top-k sampling
-        },
-        think=False                                                    
-    )
-    print(summarized["message"]["content"])
-    return(chat_scorer(f"CONVERSATION:{messages}\nPROFILES:{summarized["message"]["content"]}",detail = detail, model= model)
+    if detail == True:
+        summarized = chat(
+            model= 'gemma3:latest',
+            messages=[
+                # {'role': 'system', 'content': system_prompt},
+                {'role': 'user', 'content': str(profiles)+summarize_prompt}
+            ],
+            options={
+                'temperature': 0.4, 
+                'top_p': 0.9,        # Union: nucleus sampling
+                'top_k': 40,         # Union: top-k sampling
+            },
+            think=False                                                    
+        )
+        print(summarized["message"]["content"])
+        return(chat_scorer(f"CONVERSATION:{messages}\nPROFILES:{summarized["message"]["content"]}",detail = detail, model= model))
+    else:
+        return(chat_scorer(f"CONVERSATION:{messages}",detail = detail, model= model)
 )
-def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
+def chat_scorer(content: str, detail:bool=True, model:str = "gemma3:latest"):
     """
     """
    
@@ -79,7 +79,7 @@ def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
                         "engagement_quality": [0-10],  
                         "authenticity": [0-10],  
                         "connection": [0-10],  
-                        "truthfullness": [0-10],                                          
+                        "truthfulness": [0-10],                                          
                         "general_trend": ["positive" or "negative"],  
                         "m_comments": "One sentence of Practical feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness, and giving him advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
                         "f_comments": "One sentence of Practical feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness, and giving her advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user."
@@ -116,7 +116,7 @@ def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
                         "engagement_quality": [0-10],  
                         "authenticity": [0-10],  
                         "connection": [0-10],  
-                        "truthfullness": [0-10],  
+                        "truthfulness": [0-10],  
                         "general_trend": ["positive" or "negative"],
                         "m_comments": "Practical feedback and advice for the male user, addressing his engagement, authenticity, connection, and truthfulness, and giving him advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing him as 'you', acting as an analyzer, not as the other user.",
                         "f_comments": "Practical feedback and advice for the female user, addressing her engagement, authenticity, connection, and truthfulness, and giving her advice on how to continue the conversation. If either the male or female user is dishonest about a detail, mention it. Write it addressing her as 'you', acting as an analyzer, not as the other user.",
@@ -139,7 +139,7 @@ def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
             },
             think=False,
             stream=False
-        )
+        )   
     else:
         response = chat(
         
@@ -152,7 +152,7 @@ def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
                 'temperature': 0.5,
                 'top_p': 0.95,        # Union: nucleus samplings
                 'top_k': 50,         # Union: top-k sampling
-            },
+            }, 
             think=False,    
             stream=False
         )
@@ -160,10 +160,20 @@ def chat_scorer(content: str, detail:bool=False, model:str = "gemma3:latest"):
     return(str(response['message']['content']).replace("```","").replace("json",""))
     
 # Example usage
-with open("tests/neg_R&P_test.json", encoding="utf-8") as messages:
-    with open("tests/R&P_profile.json", encoding="utf-8") as profiles:
-        # chat_scorer(f"PROFILES:{profiles.read()}\nMESSAGES:{messages.read(e)}")
-        result = chat_parser(profiles.read(),messages.read(),
-         detail=False,
-         model="gemma3:latest")
-        print(result)
+if __name__=="__main__":
+    print("================POSITIVE EXAMPLE================")
+    with open("tests/pos_R&P_test.json", encoding="utf-8") as messages:
+        with open("tests/R&P_profile.json", encoding="utf-8") as profiles:  
+            # chat_scorer(f"PROFILES:{profiles.read()}\nMESSAGES:{messages.read(e)}")
+            result = chat_parser(profiles.read(),messages.read(),
+            detail=False,
+            model="gemma3:latest")
+            print(result)
+    print("================NEGATIVE EXAMPLE================")
+    with open("tests/neg_R&P_test.json", encoding="utf-8") as messages:
+        with open("tests/R&P_profile.json", encoding="utf-8") as profiles:  
+            # chat_scorer(f"PROFILES:{profiles.read()}\nMESSAGES:{messages.read(e)}")
+            result = chat_parser(profiles.read(),messages.read(),
+            detail=False,
+            model="gemma3:latest")
+            print(result)

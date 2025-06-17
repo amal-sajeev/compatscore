@@ -10,6 +10,18 @@ class ScoreInput(BaseModel):
 
 @app.post("/score")
 def getdetailscore(scoredat: ScoreInput):
+    """Get scores and analysis for a conversation, given the profiles and the messages. Currently uses Gemma 8B.
+
+    Args:
+        scoredat (ScoreInput): JSON format: {
+                                                profiles: [list of profiles in JSON format],
+                                                messages: [list of messages or messages in JSON format]
+                                                detail: Bool = If set to True, returns detailed analysis and takes more time, otherwise returns quick analysis. Default = True
+                                            }
+
+    Raises:
+        HTTPException: _description_
+    """
     try:
         return(convoscore.chat_parser(scoredat.profiles, scoredat.messages,scoredat.detail))
     except Exception as e:
