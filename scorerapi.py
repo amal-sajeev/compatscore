@@ -5,7 +5,7 @@ import convoscore
 
 app = FastAPI()
 class ScoreInput(BaseModel):
-    profiles: Union[list,dict,str]
+    profiles: Union[list,dict,str] = ""
     messages: Union[list,dict,str]
     detail: bool = True
 
