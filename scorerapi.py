@@ -1,12 +1,13 @@
 from fastapi import FastAPI, Body, HTTPException
 from pydantic import BaseModel
+from typing import Union
 import convoscore
 
 app = FastAPI()
 class ScoreInput(BaseModel):
     profiles: Union[list,dict,str]
     messages: Union[list,dict,str]
-    detail: Bool = True
+    detail: bool = True
 
 @app.post("/score")
 def getdetailscore(scoredat: ScoreInput):
@@ -16,7 +17,7 @@ def getdetailscore(scoredat: ScoreInput):
         scoredat (ScoreInput): JSON format: {
                                                 profiles: [list of profiles in JSON format],
                                                 messages: [list of messages or messages in JSON format]
-                                                detail: Bool = If set to True, returns detailed analysis and takes more time, otherwise returns quick analysis. Default = True
+                                                detail: bool = If set to True, returns detailed analysis and takes more time, otherwise returns quick analysis. Default = True
                                             }
 
     Raises:
